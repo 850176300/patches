@@ -1,5 +1,5 @@
 diff --git a/src/build/common.gypi b/src/build/common.gypi
-index 29990c65..60b1a015 100644
+index 29990c65..0bf29f4b 100644
 --- a/src/build/common.gypi
 +++ b/src/build/common.gypi
 @@ -123,8 +123,8 @@
@@ -13,6 +13,17 @@ index 29990c65..60b1a015 100644
  
      # Set to 1 to enable code coverage.  In addition to build changes
      # (e.g. extra CFLAGS), also creates a new target in the src/chrome
+@@ -251,8 +251,8 @@
+       'win_release_Optimization%': '2', # 2 = /Os
+       'win_debug_Optimization%': '0',   # 0 = /Od
+       # See http://msdn.microsoft.com/en-us/library/aa652367(VS.71).aspx
+-      'win_release_RuntimeLibrary%': '0', # 0 = /MT (nondebug static)
+-      'win_debug_RuntimeLibrary%': '1',   # 1 = /MTd (debug static)
++      'win_release_RuntimeLibrary%': '2', # 0 = /MT (nondebug static)
++      'win_debug_RuntimeLibrary%': '3',   # 1 = /MTd (debug static)
+ 
+       'release_extra_cflags%': '',
+       'debug_extra_cflags%': '',
 @@ -392,6 +392,29 @@
            'NO_TCMALLOC',
          ],
