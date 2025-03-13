@@ -10,7 +10,6 @@ popd > /dev/null
 --disable-unit-tests \
 --disable-tools \
 --disable-docs \
---enable-static-msvcrt \
 --enable-vp8 \
 --enable-vp9 \
 --enable-webm-io \
