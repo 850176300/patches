@@ -1,0 +1,13 @@
+diff --git a/cmake/init_target.cmake b/cmake/init_target.cmake
+index f3d7ba9c..bf55ff84 100644
+--- a/cmake/init_target.cmake
++++ b/cmake/init_target.cmake
+@@ -15,7 +15,7 @@ function(init_target target_name) # init_target(my_target folder_name)
+ 
+     if (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+         set_target_properties(${target_name} PROPERTIES
+-            MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
++            MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL")
+     endif()
+     set_target_properties(${target_name} PROPERTIES
+         XCODE_ATTRIBUTE_CLANG_ENABLE_OBJC_WEAK YES
