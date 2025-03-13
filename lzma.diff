@@ -1,0 +1,22 @@
+diff --git a/C/Util/LzmaLib/LzmaLib.vcxproj b/C/Util/LzmaLib/LzmaLib.vcxproj
+index 059dfcc..edb4bde 100644
+--- a/C/Util/LzmaLib/LzmaLib.vcxproj
++++ b/C/Util/LzmaLib/LzmaLib.vcxproj
+@@ -167,7 +167,7 @@
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+     <ClCompile>
+-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
++      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+       <FunctionLevelLinking>false</FunctionLevelLinking>
+       <Optimization>Disabled</Optimization>
+@@ -299,7 +299,7 @@
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+     <ClCompile>
+-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
++      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+       <StringPooling>true</StringPooling>
+       <FunctionLevelLinking>true</FunctionLevelLinking>
